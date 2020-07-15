@@ -1,12 +1,8 @@
 <template>
   <div class="md:flex flex-col w-screen h-screen content-center">
-    <link rel="preconnect" href="https://app.snipcart.com">
-    <link rel="preconnect" href="https://cdn.snipcart.com">
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css" />
     <NavBar />
     <Nuxt />
     <div hidden id="snipcart" data-api-key="YjdiNWIyOTUtZTIyMy00MWMwLTkwNDUtMzI1M2M2NTgxYjE0"></div>
-    <script src="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.js"></script>
   </div>
 </template>
 <script>

@@ -14,6 +14,9 @@ export default {
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
   */
+
+//  <script src="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.js"></script>
+
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -22,7 +25,13 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
+      { rel='preconnect', href="https://app.snipcart.com" },
+      { rel='preconnect', href="https://cdn.snipcart.com" },
+      { rel='stylesheet', href="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css" },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.js'} 
     ]
   },
   /*
