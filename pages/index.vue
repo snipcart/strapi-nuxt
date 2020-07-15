@@ -1,9 +1,15 @@
 <template>
-  <div class="container">
-    <div>
-      <div v-for="p in products" :key="p.id">
-          <nuxt-link :to="`/products/${p.id}`">{{p.Name}}</nuxt-link>
-      </div>
+  <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col items-center">
+    <div v-for="p in products" :key="p.id" class="w-1/3 mt-6 ml-6 mr-6 border rounded-lg">
+      <nuxt-link :to="`/products/${p.id}`">
+        <div :style="{backgroundImage: p.gradient}">
+            <img class="mx-auto" :src="`https://strapi-snipcart.herokuapp.com${p.image[0].formats.thumbnail.url}`">
+        </div>          
+        <div class="ml-4 mt-4 mb-4 mr-4">
+          <h4 class="mt-1 font-semibold text-lg leading-tight truncate">{{p.title}}</h4>
+          <div class="mt-1">{{p.description}}</div>
+        </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -16,7 +22,7 @@ export default {
     }
   },
   created: async function () {
-    const res = await fetch('http://localhost:1337/products')
+    const res = await fetch('https://strapi-snipcart.herokuapp.com/products')
     this.products = await res.json()
   }
 }
