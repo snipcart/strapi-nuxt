@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "export": "nuxt export",
-    "serve": "nuxt serve"
+    "serve": "nuxt serve",
+    "generate": "nuxt build && nuxt export"
   },
   "dependencies": {
     "nuxt": "^2.13.0"
