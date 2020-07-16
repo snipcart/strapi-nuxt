@@ -11,6 +11,8 @@
     "generate": "nuxt build && nuxt export"
   },
   "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.1",
+    "graphql": "^15.3.0",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {

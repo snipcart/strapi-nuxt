@@ -15,15 +15,19 @@
 </template>
 
 <script>
+import productsQuery from '../apollo/queries/product/products'
+
 export default {
   data(){
     return {
       products: []
     }
   },
-  created: async function () {
-    const res = await fetch('https://strapi-snipcart.herokuapp.com/products')
-    this.products = await res.json()
+  apollo: {
+    products: {
+      prefetch: true,
+      query: productsQuery
+    }
   }
 }
 </script>

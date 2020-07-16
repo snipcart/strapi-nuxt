@@ -1,4 +1,3 @@
-
 export default {
   /*
   ** Nuxt rendering mode
@@ -61,7 +60,18 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/apollo'
   ],
+  apollo: {  
+    clientConfigs: {
+      default: {
+        httpEndpoint: process.env.BACKEND_URL || "https://strapi-snipcart.herokuapp.com/graphql"
+      }
+    }
+  },
+  env: {
+    strapiBaseUri: process.env.API_URL || "https://strapi-snipcart.herokuapp.com/"
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

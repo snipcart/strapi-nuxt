@@ -27,6 +27,8 @@
 </template>
 
 <script>
+import productQuery from '../../../apollo/queries/product/product'
+
 export default {
   data(){
     return {
@@ -36,14 +38,21 @@ export default {
   computed: {
     customFields(){
       return this.product["custom"]
-        .map((field, index) => Object.entries(field)
+        .map(({title, required, options}) => ({name: title, required, options}))
+        .map((x, index) => Object.entries(x)
           .map(([key, value]) => ({[`data-item-custom${index + 1}-${key.toString().toLowerCase()}`]: value})))
         .reduce((acc, curr) => acc.concat(curr), [])
+        .reduce((acc, curr) => ({...acc, ...curr}))
     }
   },
-  created: async function () {
-    const res = await fetch(`https://strapi-snipcart.herokuapp.com/products/${this.$route.params.id}`)
-    this.product = await res.json()
+  apollo: {
+    product: {
+      prefetch: true,
+      query: productQuery,
+      variables () {
+        return { id: parseInt(this.$route.params.id) }
+      }
+    }
   }
 }
 </script>

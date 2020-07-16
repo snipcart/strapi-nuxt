@@ -1,0 +1,9 @@
+query Products {
+  products {
+    id
+    title
+    image
+    description,
+    gradient
+  }
+}
