@@ -6,11 +6,11 @@
       </span>
     </a>
     <button class="snipcart-checkout">
-        <span class="emoji">🛒</span> 
-        
         <span class="mt-2 text-gray-500">
           (<span class="snipcart-items-count"></span> items - <span class="snipcart-total-price"></span>)
         </span>
+
+        <span class="emoji">🛒</span> 
     </button>
   </div>
 </template>
