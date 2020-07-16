@@ -65,7 +65,7 @@ export default {
   apollo: {  
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.BACKEND_URL || "https://strapi-snipcart.herokuapp.com/graphql"
+        httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337"
       }
     }
   },
