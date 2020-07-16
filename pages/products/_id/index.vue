@@ -13,7 +13,7 @@
             class="snipcart-add-item mt-4 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
             :data-item-id="product.id"
             :data-item-price="product.price"
-            :data-item-url="`${process.env.STORE_URL}{this.$route.fullPath}`"
+            :data-item-url="`${storeUrl}${this.$route.fullPath}`"
             :data-item-description="product.description"
             :data-item-image="product.image"
             :data-item-name="product.title"
@@ -32,7 +32,8 @@ import productQuery from '../../../apollo/queries/product/product'
 export default {
   data(){
     return {
-      product: null
+      product: null,
+      storeUrl: process.env.storeUrl
     }
   },
   computed: {

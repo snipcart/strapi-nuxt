@@ -12,8 +12,9 @@
   },
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.1-rc.1",
+    "apollo-cache-inmemory": "^1.6.6",
+    "core-js": "^2.6.5",
     "graphql": "^15.3.0",
-    "core-js": "^2.6.5", 
     "nuxt": "^2.13.0"
   },
   "devDependencies": {
