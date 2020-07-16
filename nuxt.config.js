@@ -69,9 +69,6 @@ export default {
       }
     }
   },
-  env: {
-    strapiBaseUri: process.env.API_URL || "https://strapi-snipcart.herokuapp.com/"
-  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
