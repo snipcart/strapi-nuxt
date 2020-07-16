@@ -1,5 +1,5 @@
 <template>
-  <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col items-center">
+  <div class="flex flex-col xl:flex-row lg:flex-row md:flex-row items-center">
     <div v-for="p in products" :key="p.id" class="w-1/3 mt-6 ml-6 mr-6 border rounded-lg">
       <nuxt-link :to="`/products/${p.id}`">
         <div class="rounded-t-lg" :style="{backgroundImage: p.gradient}">
