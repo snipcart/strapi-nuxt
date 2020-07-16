@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between mr-6 ml-6 mt-6">
+  <div class="flex justify-between ml-6 mr-6">
     <a href="/">
       <span class="emoji">
         🧁
