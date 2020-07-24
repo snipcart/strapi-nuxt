@@ -1,20 +1,20 @@
-# nuxt-strapi-snipcart
+# Strapi & Nuxt e-commerce app using Snipcart
 
-## Build Setup
+![strapi-nuxt-ecommerce](https://snipcart.com/media/204926/strapi-nuxt-ecommerce.png)
 
-```bash
-# install dependencies
-$ yarn install
+Here's how to bind Nuxt to Strapi and use Snipcart to craft a neat e-commerce app.
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+Tutorial steps:
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+- Generating a Strapi app & creating products
+- Consuming products with Nuxt.js
+- Adding e-commerce functionalities with Snipcart
+- Handling custom fields in the cart
+- Integrating a GraphQL plugin
+- Deploying the Strapi & Nuxt e-commerce app
 
-# generate static project
-$ yarn generate
-```
+> Read the complete tutorial [here](https://snipcart.com/blog/strapi-nuxt-ecommerce)
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+> Try the live demo [here](https://strapi-nuxt-snipcart.netlify.app/)
+
+Happy coding folks!
