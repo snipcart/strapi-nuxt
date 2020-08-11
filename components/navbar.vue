@@ -1,22 +1,24 @@
 <template>
-  <div class="flex justify-between ml-6 mr-6">
+  <div class="flex justify-between ml-6 mr-6 mt-4">
     <nuxt-link to="/">
       <span class="emoji">
         🧁
       </span>
     </nuxt-link>
 
-    <button class="snipcart-checkout">
-        <span class="mt-2 text-gray-500">
-          (<span class="snipcart-items-count"></span> items - <span class="snipcart-total-price"></span>)
-        </span>
-
-        <span class="emoji">🛒</span> 
+    <button class="snipcart-checkout flex items-center">
+        <Cart />
+        <span class="snipcart-total-price ml-3 font-semibold text-sm text-indigo-500"></span>
     </button>
   </div>
 </template>
 <script>
+import Cart from "./icons/cart.vue"
+
 export default {
+    components: {
+        Cart
+    }
 }
 </script>
 

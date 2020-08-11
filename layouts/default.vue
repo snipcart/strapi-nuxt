@@ -1,12 +1,16 @@
 <template>
-  <div class="md:flex flex-col w-screen h-screen content-center p-6">
-    <NavBar />
-    <Nuxt />
-    <div hidden id="snipcart" data-api-key="YjdiNWIyOTUtZTIyMy00MWMwLTkwNDUtMzI1M2M2NTgxYjE0"></div>
-  </div>
+    <div class="flex justify-center">
+        <div class="max-w-screen-lg flex flex-col min-h-screen w-full">
+            <NavBar />
+            <Nuxt class="flex-grow"/>
+            <Footer />
+        </div>
+        <div hidden id="snipcart" data-api-key="YjdiNWIyOTUtZTIyMy00MWMwLTkwNDUtMzI1M2M2NTgxYjE0"></div>
+    </div>
 </template>
 <script>
 import NavBar from './../components/navbar'
+import Footer from './../components/footer'
 
 export default {
   components: { NavBar }
@@ -23,7 +27,7 @@ html {
     'Helvetica Neue',
     Arial,
     sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

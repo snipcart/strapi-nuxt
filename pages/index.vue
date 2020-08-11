@@ -1,17 +1,19 @@
 <template>
-  <div class="flex flex-col xl:flex-row lg:flex-row md:flex-row items-center">
-    <div v-for="p in products" :key="p.id" class="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 m-6 border rounded-lg">
-      <nuxt-link :to="`/products/${p.id}`">
-        <div class="rounded-t-lg" :style="{backgroundImage: p.gradient}">
-            <img class="crop mx-auto" :src="p.image">
-        </div>          
-        <div class="ml-4 mt-4 mb-4 mr-4">
-          <h4 class="mt-1 font-semibold text-lg leading-tight truncate">{{p.title}}</h4>
-          <div class="mt-1">{{p.description}}</div>
+    <div>
+        <div class="m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+            <div v-for="p in products" :key="p.id" class="border rounded-lg bg-gray-100 hover:shadow-lg">
+            <nuxt-link :to="`/products/${p.id}`">
+                <div class="rounded-t-lg bg-white pt-2 pb-2">
+                    <img class="crop mx-auto" :src="p.image">
+                </div>          
+                <div class="pl-4 pr-4 pb-4 pt-4 rounded-lg">
+                <h4 class="mt-1 font-semibold text-base leading-tight truncate text-gray-700">{{p.title}}</h4>
+                <div class="mt-1 text-sm text-gray-700">{{p.description}}</div>
+                </div>
+            </nuxt-link>
+            </div>
         </div>
-      </nuxt-link>
     </div>
-  </div>
 </template>
 
 <script>
