@@ -6,7 +6,7 @@ query Products($id: ID!) {
     description,
     gradient,
     price,
-    custom {
+    Custom_field {
       title
       required,
       options
