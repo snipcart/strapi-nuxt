@@ -5,10 +5,10 @@
         <a href="https://twitter.com/snipcart" class="max-w-xs ml-4">
           <Twitter />
         </a>
-        <a href="https://www.facebook.com/Snipcart/" class="ml-3">
+        <a href="https://facebook.com/Snipcart/" class="ml-3">
           <Facebook />
         </a>
-        <a href="https://github.com/snipcart/snipcart-demo-v3" class="ml-3">
+        <a href="https://github.com/snipcart/strapi-nuxt" class="ml-3">
           <Github />
         </a>
     </div>
