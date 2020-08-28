@@ -17,4 +17,6 @@ Tutorial steps:
 
 > Try the live demo [here](https://strapi-nuxt-snipcart.netlify.app/)
 
+> See the starter [here](https://strapi.io/blog/strapi-starter-nuxt-js-e-commerce)
+
 Happy coding folks!
