@@ -13,7 +13,7 @@ Tutorial steps:
 - Integrating a GraphQL plugin
 - Deploying the Strapi & Nuxt e-commerce app
 
-> Read the complete tutorial [here](https://snipcart.com/blog/strapi-nuxt-ecommerce)
+> Read the complete tutorial [here](https://snipcart.com/blog/strapi-nuxt-ecommerce-tutorial)
 
 > Try the live demo [here](https://strapi-nuxt-snipcart.netlify.app/)
 
