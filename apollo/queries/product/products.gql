@@ -3,7 +3,6 @@ query Products {
     id
     title
     image
-    description,
-    gradient
+    description
   }
 }

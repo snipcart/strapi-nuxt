@@ -4,7 +4,6 @@ query Products($id: ID!) {
     title
     image
     description,
-    gradient,
     price,
     Custom_field {
       title
